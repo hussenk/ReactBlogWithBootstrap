@@ -29,34 +29,40 @@ export default Navbar;
 const nav2 = () => {
   return (
     <div>
-      <BrowserRouter>
-        <nav className="navbar navbar-expand-lg  navbar-light bg-light">
-          <div className="container-fluid">
-            <Link className="navbar-brand" to={"#"}>
-              THE BAND
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <ListItem css="" to="home" text="Home" />
-                <ListItem css="" to="aboutus" text="About US" />
-                <ListItem css="" to="tour" text=" Our Tours" />
-                <ListItem css="" to="buy" text="Our Stuff" />
-              </ul>
-            </div>
+      <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to={"#"}>
+            THE BAND
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <Links />
+            </ul>
           </div>
-        </nav>
-      </BrowserRouter>
+        </div>
+      </nav>
     </div>
+  );
+};
+
+export const Links = ({ css="" }: any) => {
+  return (
+    <>
+      <ListItem css={css} to="home" text="Home" />
+      <ListItem css={css} to="aboutus" text="About US" />
+      <ListItem css={css} to="tour" text=" Our Tours" />
+      <ListItem css={css} to="buy" text="Our Stuff" />
+    </>
   );
 };

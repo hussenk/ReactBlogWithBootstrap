@@ -7,8 +7,11 @@ interface IListItem {
 
 const ListItem = ({ to, css, text }: IListItem) => {
   // const currentURL = window.location.pathname;
+  if (css.length <= 0) {
+    css = "nav-item";
+  }
   return (
-    <li className={"nav-item" + css}>
+    <li className={css}>
       <Link className="nav-link" aria-current="page" to={to}>
         {text}
       </Link>
