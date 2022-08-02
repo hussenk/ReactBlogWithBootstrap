@@ -1,7 +1,11 @@
+import { TitlePage } from "../components/TitlePage.component";
+
 const Buy = () => {
   return (
     <div>
-      <h1>Buy page</h1>
+      <div className="container mb-2">
+        <TitlePage title={"Our Stuff"} />
+      </div>
     </div>
   );
 };
