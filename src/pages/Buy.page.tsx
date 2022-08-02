@@ -1,6 +1,9 @@
 const Buy = () => {
-    return <div></div>;
-  };
-  
-  export default Buy;
-  
+  return (
+    <div>
+      <h1>Buy page</h1>
+    </div>
+  );
+};
+
+export default Buy;
