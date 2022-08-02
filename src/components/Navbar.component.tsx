@@ -1,4 +1,4 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ListItem from "./ListItem.component";
 
 const Navbar = () => {
@@ -56,7 +56,7 @@ const nav2 = () => {
   );
 };
 
-export const Links = ({ css="" }: any) => {
+export const Links = ({ css = "" }: any) => {
   return (
     <>
       <ListItem css={css} to="home" text="Home" />
